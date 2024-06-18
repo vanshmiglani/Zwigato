@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+
+}
+
+body {
+
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ----------------common properties in all div of backgrounds------------------ */
+
+.common {
+    height: 100vh;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------------div contining background images--------------------- */
+.bg1 {
+    background: url('pics/1bg.jpg') center;
+    background-size: cover;
+}
+
+.bg2 {
+    background: url('pics/2bg.avif') center;
+    background-size: cover;
+}
+
+.bg3 {
+    background-repeat: no-repeat;
+    background: url('pics/bg3.avif') center;
+    background-size: cover;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.425);
+    transition: all 0.5s ease;
+    height: 100vh;
+}
+
+/* ------------------nav bar making area-------------    */
+
+nav {
+    background-color: rgba(128, 128, 128, 0.856);
+    height: 15vh;
+    top: 0;
+    backdrop-filter: blur(2px);
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 0.2rem 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.295);
+}
+
+.text {
+    margin-left: 30%;
+}
+
+.buttons {
+    margin-left: 35%;
+}
+
+
+/* ------------navbar area 1st area------------ */
+.image>img {
+    width: 7rem;
+
+    height: 5rem;
+}
+
+.image>img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.image>img:active {
+    scale: 0.9;
+}
+
+/* -------------navbar working of 2nd area -------------- */
+span>input {
+    padding: 0.3rem 0.8rem;
+    ;
+    border: 2px solid black;
+    /* display: flex; */
+    border-radius: 1rem 0rem 0rem 1rem;
+    margin-top: 10%;
+    width: 120%;
+}
+
+.text>img {
+    width: 2rem;
+    padding: 0.2rem 0.3rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 27%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+    left: 56.5%;
+}
+
+.text>img:active {
+    scale: 0.9;
+}
+
+input:focus-visible {
+    border: 2px solid black;
+}
+
+input::placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ----------------navbar working of 3rd area -------------- */
+button {
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    /* margin-left: 0.2%; */
+    text-shadow: 2px 1px 20px whitesmoke;
+    margin-top: 16%;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.2;
+    transition: all 0.2s ease;
+
+}
+
+button:active {
+    scale: 0.8;
+    /* color: magenta; */
+}
+
+button>i {
+    color: black;
+
+}
+
+button:active button>i {
+    color: cyan;
+}
+
+button>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------------starting area of div  "contact"------*/
+
+
+/* -----------Add Area------------------- */
+video {
+    position: absolute;
+    top: 140%;
+    left: 30%;
+    width: 40%;
+    display: none;
+    height: 51vh;
+    opacity: 0.8;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+
+.add_here {
+
+    animation: pop_up 1s 1;
+    text-align: center;
+
+}
+
+
+/* -------------------heading area---------------- */
+
+.head {
+    text-align: center;
+    font-size: 7rem;
+
+}
+
+.txt1 {
+    font-size: 7rem;
+
+    text-shadow: 5px 5px 20px black;
+}
+
+#element {
+    font-size: 7rem;
+    text-shadow: 5px 5px 20px black;
+
+
+}
+
+.make_it_here {
+    animation: heading_left 1s 1;
+}
+
+/* ------------------------- heading below area of some conversation --------- */
+.area {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    text-shadow: 8px 8px 10px black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#named {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+
+.margin {
+    position: absolute;
+    top: 82%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    left: 41.5%;
+}
+
+
+
+.margin>a {
+    color: white;
+    text-decoration: underline white;
+}
+
+
+/* -------------------menu cards area in 2nd background ------------ */
+.menu1>img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu_cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    height: 300px;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menu2>img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu3>img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu1>img:hover {
+    transition: all 0.3s ease;
+    scale: 1.1;
+}
+
+.menu2>img:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+}
+
+.menu3>img:hover {
+    transition: all 0.3s ease;
+    scale: 1.1;
+}
+
+.txt2 {
+    position: absolute;
+    top: 255%;
+    font-size: 1.7rem;
+    left: 5.5%;
+}
+
+.txt3 {
+    position: absolute;
+    top: 255%;
+    font-size: 1.7rem;
+    left: 43%;
+}
+
+.txt4 {
+    position: absolute;
+    top: 255%;
+    font-size: 1.7rem;
+    right: 11%;
+}
+
+form {
+    height: 70vh;
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.459);
+    position: absolute;
+    top: 140%;
+    color: black;
+    overflow: scroll;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+center>b{
+          font-size: 2rem;
+}
+b{
+    font-size: 1.5rem;
+}
+center>b:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+.item{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.price{
+    margin-left: 67%;
+}
+.price2{
+    margin-left: 65%;
+}
+.price3{
+    margin-left: 61%;
+}
+.choice{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.price4{
+    margin-left: 47%;
+}
+.menu_1{
+    display: none;
+}
+.menu_2{
+    display: none;
+}
+.menu_3{
+    display: none;
+}
+.menu_showing{
+    animation: pop_up 1s 1;
+}
+
+/* -------------------------------Ideas------------------------------------- */
+
+.padd{
+    padding: 1.5rem 2.8rem;
+}
+.make_a_wish{
+    animation: heading_left 1s 1;
+}
+
+/* --------------------------2nd background things ------------------- */
+.menu_items{
+    width: 100%;
+    display : flex;
+    height: 25vh;
+    justify-content: space-between;
+    
+}
+#idea{
+    font-size: 2rem;
+    /* display: none; */
+ }
+ #idea:hover{
+     text-decoration: underline;
+ }
+.menu_items_container{
+    
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.make:hover{
+    scale : 1.15;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.make{
+    width : 150px;
+    height : 150px;
+}
+
+.common2{
+    display: none;
+    position: absolute;
+    top : 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    left: 0;
+}
+
+.pizza:hover .txt6{
+ 
+ position: absolute;
+    display: block;
+    top : 148%;
+    left: 6.5%;
+}
+.dosa:hover .txt7{
+    position: absolute;
+    display: block;
+    top : 148%;
+    left: 34%;
+}
+.fries:hover .txt8{
+    position: absolute;
+    display: block;
+    top : 148%;
+    left: 58%;
+}
+
+.noodles:hover .txt9{
+    position: absolute;
+    display: block;
+    top : 148%;
+    left: 87%;
+}
+.burger:hover .txt10{
+    position: absolute;
+    display: block;
+    top : 189%;
+    left: 5.8%;
+}
+
+.sandwich:hover .txt11{
+    position: absolute;
+    display: block;
+    top : 189%;
+    left: 31.5%;
+}
+
+.momos:hover .txt12{
+    position: absolute;
+    display: block;
+    top : 189%;
+    left: 60.5%;
+}
+.pasta:hover .txt13{
+    position: absolute;
+    display: block;
+    top : 189%;
+    left: 89%;
+}
+
+/* --------Animations Here ----------- */
+@keyframes pop_up {
+    0% {
+        scale: 1;
+        opacity: 0.2;
+        transition: all 0.3s ease;
+    }
+
+    75% {
+        opacity: 0.8;
+        scale: 1.2;
+        transition: all 0.3s ease;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        transition: all 0.8s ease;
+    }
+
+}
+
+@keyframes heading_left {
+    0% {
+        opacity: 0;
+        position: absolute;
+        top: 25%;
+        left: 0;
+
+    }
+
+    50% {
+        opacity: 0.3;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        transition: all 0.5;
+
+    }
+
+
+    100% {
+        opacity: 1;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        transition: all 0.5;
+
+    }
+}
+
+
+
+/* ------------Scroll bar area -------------- */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #f6a750;
+    transition: all 0.5s ease;
+}
